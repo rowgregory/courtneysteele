@@ -1,7 +1,5 @@
-export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center">
-      <main className="text-white uppercase">Courtney Steele</main>
-    </div>
-  );
+import { HomeClient } from "./components/pages/HomeClient";
+
+export default function HomePage() {
+  return <HomeClient />;
 }

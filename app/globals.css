@@ -9,10 +9,23 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-lexend: var(--font-lexend);
+  --font-merriweather: var(--font-merriweather);
+}
+
+@theme {
+  --color-brand-primary: #c9a227;
+  --color-brand-secondary: #a07d1c;
+  --color-brand-accent: #e8c84a;
+  --color-brand-cta: #dc2f02;
+  --color-brand-cta-hover: #b52502;
+  --color-surface-dark: #0a0a0a;
+  --color-surface-card: #111111;
+  --font-display: "Playfair Display", serif;
+  --font-body: var(--font-merriweather);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-lexend), Arial, Helvetica, sans-serif;
+  font-family: var(--font-merriweather), Arial, Helvetica, sans-serif;
 }
