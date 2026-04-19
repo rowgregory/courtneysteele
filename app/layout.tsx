@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lexend, Merriweather } from "next/font/google";
+import { Lexend, Merriweather, Metal_Mania } from "next/font/google";
 import "./globals.css";
 import RootLayoutWrapper from "./root-layout";
 
@@ -9,6 +9,11 @@ const lexend = Lexend({
 });
 const merriweather = Merriweather({
   variable: "--font-merriweather",
+  subsets: ["latin"],
+});
+const metalMania = Metal_Mania({
+  weight: ["400"],
+  variable: "--font-metalmania",
   subsets: ["latin"],
 });
 
@@ -25,7 +30,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${lexend.variable} ${merriweather.variable} h-full antialiased`}
+      className={`${lexend.variable} ${merriweather.variable} ${metalMania.variable} h-full antialiased`}
     >
       <body className={`min-h-full flex flex-col`}>
         <RootLayoutWrapper>{children}</RootLayoutWrapper>

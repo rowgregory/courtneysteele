@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { ONLYFANS_URL } from "@/app/lib/constants/urls";
-import Picture from "../common/Picture";
 
 export function Header() {
   return (
@@ -33,13 +32,12 @@ export function Header() {
       <header className="px-3 sm:px-6 backdrop-blur-sm sticky top-0 z-50 border-b border-white/5">
         <div className="max-w-350 mx-auto h-12 sm:h-16 flex items-center justify-between gap-2">
           {/* Logo */}
-          <Link href="/" className="shrink-0 min-w-0 flex items-center">
-            <Picture
-              src="/images/logo.png"
-              priority
-              alt="Courtney Steele"
-              className="h-8 sm:h-11 w-auto max-w-40 sm:max-w-55 object-contain"
-            />
+          <Link
+            href="/"
+            className="shrink-0 min-w-0 flex items-center font-metalmania text-white"
+            style={{ fontSize: "clamp(18px, 5vw, 36px)" }}
+          >
+            Courtney Steele
           </Link>
 
           {/* Right actions */}
@@ -56,7 +54,7 @@ export function Header() {
               Subscribe
             </Link>
 
-            {/* mobile — compact, shorter text so it fits at 320px */}
+            {/* mobile — compact */}
             <Link
               href="/subscribe"
               className="flex sm:hidden items-center px-3 h-8 text-[9px] tracking-[0.12em] uppercase font-mono font-bold text-surface-dark transition-opacity hover:opacity-80"

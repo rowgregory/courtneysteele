@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-lexend: var(--font-lexend);
   --font-merriweather: var(--font-merriweather);
+  --font-metalmania: var(--font-metalmania);
 }
 
 @theme {
