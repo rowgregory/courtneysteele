@@ -261,8 +261,8 @@ export function AboutSection() {
             <p className="text-white/40 text-sm leading-relaxed mb-8 sm:mb-10 max-w-md">
               Get closer than ever. Courtney shares exclusive photos, personal
               videos, and behind-the-scenes moments you won&apos;t find anywhere
-              else — only on her subscription page. Join thousands of fans
-              already on the inside.
+              else — only on her subscription page. Join thousands of fans that
+              are already inside.
             </p>
 
             <Link
