@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lexend, Merriweather, Metal_Mania } from "next/font/google";
 import "./globals.css";
 import RootLayoutWrapper from "./root-layout";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const lexend = Lexend({
   variable: "--font-lexend",
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className={`min-h-full flex flex-col`}>
         <RootLayoutWrapper>{children}</RootLayoutWrapper>
       </body>
+      <GoogleAnalytics gaId="G-YJDR2VKJ0E" />
     </html>
   );
 }
