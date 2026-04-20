@@ -6,9 +6,9 @@ import Picture from "../common/Picture";
 import { X } from "lucide-react";
 
 const images = [
-  { src: "/images/levels/_4/img-25.jpg", label: "I" },
-  { src: "/images/levels/_4/img-26.jpg", label: "II" },
-  { src: "/images/levels/_4/img-27.jpg", label: "III" },
+  { src: "/images/levels/_4/img-25.JPG", label: "I" },
+  { src: "/images/levels/_4/img-26.JPG", label: "II" },
+  { src: "/images/levels/_4/img-27.JPG", label: "III" },
 ];
 
 function Sparkle({
