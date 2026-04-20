@@ -43,7 +43,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="text-brand-primary/50 text-[9px] sm:text-xs tracking-[0.35em] uppercase font-mono mb-4 sm:mb-6"
           >
-            ✦ Your favorite creator ✦
+            ✦ Your favorite plaything ✦
           </motion.p>
 
           <motion.h1
