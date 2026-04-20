@@ -1,17 +1,18 @@
-import Image from 'next/image'
-import { FC, memo, MouseEventHandler } from 'react'
+import Image from "next/image";
+import { FC, memo, MouseEventHandler } from "react";
 
 interface PictureProps {
-  src: string
-  alt?: string
-  className?: string
-  priority?: boolean
-  onClick?: MouseEventHandler<HTMLImageElement>
-  width?: number
-  height?: number
-  sizes?: string
-  role?: string
-  decorative?: boolean
+  src: string;
+  alt?: string;
+  className?: string;
+  priority?: boolean;
+  onClick?: MouseEventHandler<HTMLImageElement>;
+  width?: number;
+  height?: number;
+  sizes?: string;
+  role?: string;
+  decorative?: boolean;
+  style?: any;
 }
 
 const Picture: FC<PictureProps> = ({
@@ -22,31 +23,33 @@ const Picture: FC<PictureProps> = ({
   onClick,
   width,
   height,
-  sizes = '100vw',
+  sizes = "100vw",
   role,
-  decorative = false
+  decorative = false,
+  style,
 }) => {
   // Decorative images must have empty alt and aria-hidden
   // If decorative prop is passed, override whatever alt was given
-  const resolvedAlt = decorative ? '' : alt || 'Boys & Girls Club of Lynn'
-  const ariaHidden = decorative ? true : undefined
+  const resolvedAlt = decorative ? "" : alt || "Boys & Girls Club of Lynn";
+  const ariaHidden = decorative ? true : undefined;
 
   return (
     <Image
       onClick={onClick}
-      src={src || '/images/placeholder.png'}
+      src={src || "/images/placeholder.png"}
       alt={resolvedAlt}
       width={width || 1}
       height={height || 1}
       className={className}
       priority={priority}
-      loading={priority ? 'eager' : 'lazy'}
+      loading={priority ? "eager" : "lazy"}
       sizes={sizes}
       unoptimized
       role={role}
       aria-hidden={ariaHidden}
+      style={style}
     />
-  )
-}
+  );
+};
 
-export default memo(Picture)
+export default memo(Picture);

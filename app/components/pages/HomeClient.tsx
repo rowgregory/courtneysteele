@@ -4,6 +4,7 @@ import { KodakImageMarquee } from "../common/KodakImageMarquee";
 import { AboutSection } from "../unique/AboutSection";
 import { CategoriesSection } from "../unique/CategoriesSection";
 import { Hero } from "../unique/Hero";
+import { SpotsOfHonorSection } from "../unique/SpotsOfHonor";
 import { TiersSection } from "../unique/TiersSelection";
 
 const imgArrOne = [
@@ -29,6 +30,7 @@ export function HomeClient() {
       <AboutSection />
       <TiersSection />
       <CategoriesSection />
+      <SpotsOfHonorSection />
     </div>
   );
 }
